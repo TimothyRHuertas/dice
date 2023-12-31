@@ -38,7 +38,7 @@ struct ImmersiveView: View {
                             let valueIndex = axisWithMaxY.value < 0 ? 1  : 0
                             appModel.diceValue = [[1,6], [4,3], [2,5]][axisWithMaxY.key][valueIndex]
                             print(appModel.diceValue!)
-                            
+
                             if(hasRolled && !isScoreViewShowing) {
                                 isScoreViewShowing = true
                                 openWindow(id: "ScoreView")
@@ -49,6 +49,7 @@ struct ImmersiveView: View {
             }
         }
         .gesture(dragGesture)
+//        .gesture(tapGesture)
     }
     
     
@@ -65,6 +66,19 @@ struct ImmersiveView: View {
             .onEnded { value in
                 hasRolled = true
                 value.entity.components[PhysicsBodyComponent.self]?.mode = .dynamic
+            }
+    }
+    
+    var tapGesture: some Gesture {
+        //https://developer.apple.com/documentation/spritekit/skphysicsbody/making_physics_bodies_move
+        SpatialTapGesture()
+            .targetedToAnyEntity()
+            .onEnded() { value in
+                print("tapped", value.entity.name)
+                if let modelEntity = value.entity as? ModelEntity {
+                    print("tapp", modelEntity.name)
+                    modelEntity.applyLinearImpulse([0, -0.009, -0.01], relativeTo: nil)
+                }
             }
     }
 }

@@ -26,9 +26,7 @@ struct ContentView: View {
                     dismissWindow(id: "ContentView")
                 }
             }
-//            .padding(.all, 50)
         }
-//        .padding()
         .scaledToFit()
         
     }
