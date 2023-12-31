@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5920F0052B40A02300F73C83 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920F0042B40A02300F73C83 /* ScoreView.swift */; };
+		5920F0072B40A07500F73C83 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920F0062B40A07500F73C83 /* AppModel.swift */; };
 		594094812B3FD7D200E7ED6B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 594094802B3FD7D200E7ED6B /* RealityKitContent */; };
 		594094832B3FD7D200E7ED6B /* DiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594094822B3FD7D200E7ED6B /* DiceApp.swift */; };
 		594094852B3FD7D200E7ED6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594094842B3FD7D200E7ED6B /* ContentView.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5920F0042B40A02300F73C83 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		5920F0062B40A07500F73C83 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		5940947B2B3FD7D200E7ED6B /* Dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5940947F2B3FD7D200E7ED6B /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		594094822B3FD7D200E7ED6B /* DiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceApp.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				594094882B3FD7D300E7ED6B /* Assets.xcassets */,
 				5940948D2B3FD7D300E7ED6B /* Info.plist */,
 				5940948A2B3FD7D300E7ED6B /* Preview Content */,
+				5920F0042B40A02300F73C83 /* ScoreView.swift */,
+				5920F0062B40A07500F73C83 /* AppModel.swift */,
 			);
 			path = Dice;
 			sourceTree = "<group>";
@@ -218,7 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				594094852B3FD7D200E7ED6B /* ContentView.swift in Sources */,
+				5920F0052B40A02300F73C83 /* ScoreView.swift in Sources */,
 				594094832B3FD7D200E7ED6B /* DiceApp.swift in Sources */,
+				5920F0072B40A07500F73C83 /* AppModel.swift in Sources */,
 				594094872B3FD7D200E7ED6B /* ImmersiveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
